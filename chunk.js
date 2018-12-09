@@ -142,7 +142,7 @@ class ChunkSection {
 	
 	SetState(blockX, blockY, blockZ, blockId, state){
 		
-		this.blockStats('block_' + blockX + '_' + blockY + '_' + blockZ, state);
+		this.blockStats.set('block_' + blockX + '_' + blockY + '_' + blockZ, state);
 		this.blocks.set('block_' + blockX + '_' + blockY + '_' + blockZ, {x: blockX, y: blockY, z: blockZ, id: blockId, state: state});
 		
 	};
